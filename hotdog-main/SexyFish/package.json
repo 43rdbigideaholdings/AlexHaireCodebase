@@ -1,0 +1,29 @@
+{
+  "name": "@yourscope/sexyfish",
+  "version": "0.1.0",
+  "description": "ElizaOS plugin exposing web chat endpoints (session, send, history) to connect any website UI.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@elizaos/core": "^1.4.2"
+  },
+  "devDependencies": {
+    "@elizaos/core": "^1.4.2",
+    "@types/node": "^24.2.1",
+    "typescript": "^5.9.2"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/your/repo.git"
+  }
+}
